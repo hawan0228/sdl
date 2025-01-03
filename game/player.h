@@ -1,4 +1,5 @@
 ﻿#include <SDL.h>
+#include<string.h>
 #ifndef PLAYER_H
 #define PLAYER_H
 
@@ -8,17 +9,20 @@ private:
     int x, y;           // �D������m
     int width, height;  // �D�����ؤo
     int speed;          // �D�������ʳt��
-    SDL_Color color;    // �D�����C��
+    SDL_Texture* texture;
+    SDL_Color color; 
 
 public:
     // �غc�禡
     Player(int startX, int startY, int w, int h, int moveSpeed, SDL_Color c);
-
     // �B�z�����޿�
     void move(const Uint8* keyState, int screenWidth, int screenHeight);
 
-    // ��V�D��
     void render(SDL_Renderer* renderer) const;
+
+    bool checkCollision(const SDL_Rect& other) const;
+
+    bool loadTexture(SDL_Renderer* renderer, const char* filePath);
 };
 
-#endif // PLAYER_H
+#endif 

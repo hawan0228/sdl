@@ -21,9 +21,21 @@
     <ClCompile Include="player.cpp">
       <Filter>標頭檔</Filter>
     </ClCompile>
+    <ClCompile Include="scoreboard.cpp">
+      <Filter>標頭檔</Filter>
+    </ClCompile>
+    <ClCompile Include="coin.cpp">
+      <Filter>標頭檔</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="player.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="scoreboard.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="coin.h">
       <Filter>標頭檔</Filter>
     </ClInclude>
   </ItemGroup>
